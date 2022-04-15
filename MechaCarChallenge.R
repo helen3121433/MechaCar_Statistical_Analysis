@@ -45,7 +45,7 @@ suspension_lot_summary
 #In your MechaCarChallenge.RScript, write an RScript using the t.test() function 
 #to determine if the PSI across all manufacturing lots is statistically different 
 #from the population mean of 1,500 pounds per square inch.
-t.test(suspension_file$PSI, mean=1500)
+t.test(suspension_file$PSI, mu=1500)
 
 
 #Next, write three more RScripts in your MechaCarChallenge.RScript using the 
@@ -57,6 +57,6 @@ suspension_lot1 <- subset(suspension_file,Manufacturing_Lot=="Lot1")
 suspension_lot2 <- subset(suspension_file,Manufacturing_Lot=="Lot2")
 suspension_lot3 <- subset(suspension_file,Manufacturing_Lot=="Lot3")
 
-t.test(suspension_lot1$PSI,mean=1500)
-t.test(suspension_lot2$PSI,mean=1500)
-t.test(suspension_lot3$PSI,mean=1500)
+t.test(suspension_lot1$PSI,mu=1500)
+t.test(suspension_lot2$PSI,mu=1500)
+t.test(suspension_lot3$PSI,mu=1500)
